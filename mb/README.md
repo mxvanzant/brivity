@@ -12,8 +12,11 @@ I had to downgrade my node version because it was breaking things related to pac
 So, I ended up going to node 16.13.1 and that worked. (asdf i)
 
 Then I cleaned up by doing:
+
 rails assets:clobber
+
 yarn
+
 rails assets:precompile
 
 ## status
