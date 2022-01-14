@@ -1,0 +1,14 @@
+  <% content_for :nav_path do %>
+    <div>nav_path: /show_post</div>
+  <% end %>
+
+  <div>
+
+    <h1><%= @post.title %></h1>
+
+    <% @post.body.split("\n").each do |p| %>
+      <p><%= p %>
+    <% end %>
+
+  </div>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Message Board</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/mb.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">Message Board</a>
+      | <a href="/post">post a message</a>
+      | <a href="/users/sign_up">sign up</a>
+      | <a href="/users/sign_in">sign in</a>
+      | <a href="/users/sign_out">sign out</a>
+      | <%= current_user ? "you are signed in as: #{current_user.email}" : "please sign up or sign in.." %>
+    </nav>
+  </header>
+  <div>
+    <p>Post your messages here about topics such as open source, BSD, GNU/Linux, system administration and programming.</p>
+    <ul class="index">
+      <li>
+        <div><a href="posts/my-70-year-old-mother-has-been-using-linux-on-the-desktop-for-the-past-21-years.html">My 70 year old mother has been using Linux on the desktop for the past 21 years</a></div>
+        <div class="index-pubdate">Published on 2022-01-07 | Modified on 2022-01-08 | Author mvz</div>
+      </li>
+      <li>
+        <div><a href="posts/no-your-website-is-not-a-webapp-even-if-you-call-it-so.html">No, your website is not a web app even if you call it so</a></div>
+        <div class="index-pubdate">Published on 2021-12-29 | Author zztop</div>
+      </li>
+    </ul>
+  </div>
+  <footer>
+  </footer>
+</body>
+<script type="module">
+  //import * as ajax from "/ajax.js";
+  //
+  //function event_hooks(){
+  //  const sign_out_element = document.getElementById("sign_out")
+  //  sign_out_element.onclick = sign_out
+  //}
+  //
+  //function sign_out(e){
+  //  const url = "/users/sign_out"
+  //  alert('sign out..')
+  //  ajax.del({url})
+  //  e.preventDefault()
+  //  e.stopPropagation()
+  //  return false
+  //}
+  //
+  //event_hooks()
+</script>
+</html>
+

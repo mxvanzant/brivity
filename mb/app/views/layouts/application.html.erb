@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Message Board</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/mb.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">Message Board</a>
+      | <a href="/posts/new">post a message</a>
+      | <a href="/users/sign_up">sign up</a>
+      | <a href="/users/sign_in">sign in</a>
+      | <a href="/users/sign_out">sign out</a>
+      | <%= current_user ? "you are signed in as: #{current_user.email}" : "please sign up or sign in.." %>
+    </nav>
+  </header>
+  <%= yield :nav_path %>
+  <%= yield %>
+  <footer>
+  </footer>
+</body>
+</html>
