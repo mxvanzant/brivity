@@ -9,8 +9,7 @@ I started out with Rails 7 but there were issues with devise -- fought with that
 I'm using Ruby 3.1.x and Rails 6.1.x (see Gemfile and .tool-versions for specifics)
 
 I had to downgrade my node version because it was breaking things related to packer/webpack: something about an empty manifest-- can't remember now exactly what it was..
-So, I ended up going to node 16.13.1 and that worked. (asdf i)
-
+So, I ended up going to node 16.13.1 and that worked.
 Then I cleaned up by doing:
 
 rails assets:clobber
@@ -39,7 +38,7 @@ I used the asdf package manager to install Ruby, Rails, Node, etc. versions. Asd
 This came from unixsheikh.com Cool blog -- check it out! :)
 
 ## public/ajax.js
-This is something I had previously written -- though I might need to use it (maybe for the devise users/sign_out which required a delete), but ended up not needing it.
+This is something I had previously written -- thought I might need to use it (maybe for the devise users/sign_out which required a delete), but ended up not needing it.
 
 ## Postgresql
 I used postgres -- see database.yml and configure to your liking for your own pg instance..
